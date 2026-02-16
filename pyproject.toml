@@ -1,0 +1,17 @@
+[project]
+name = "cpf"
+version = "0.1.0"
+description = "Compact Prompt Format — token-efficient instruction encoding for LLMs"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "VictorStackAI"}]
+
+[project.scripts]
+cpf = "cpf.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.4"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
